@@ -16,7 +16,11 @@ We are formulating cost functions, taking derivatives and performing optimizatio
 
 # Welcome to CS224N!
 
-In this part you will implement the word2vec model and train your own word vectors with stochastic gradient descent (SGD). Before you begin, first run the following commands within the assignment directory in order to create the appropriate conda virtual environment. This guarantees that you have all the necessary packages to complete the assignment. **Windows users** may wish to install the Linux Windows Subsystem9. Also note that you probably want to finish the previous math section before writing the code since you will be asked to implement the math functions in Python. You’ll probably want to implement and test each part of this section in order, since the questions are cumulative.
+In this part you will implement the word2vec model and train your own word vectors with stochastic gradient descent (SGD). Before you begin, first run the following commands within the assignment directory in order to create the appropriate conda virtual environment. This guarantees that you have all the necessary packages to complete the assignment.
+
+**Windows users** may wish to install the Linux Windows Subsystem9. Also note that you probably want to finish the previous math section before writing the code since you will be asked to implement the math functions in Python.
+
+You’ll probably want to implement and test each part of this section in order, since the questions are cumulative.
 
 
     
