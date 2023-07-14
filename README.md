@@ -16,29 +16,16 @@ We are formulating cost functions, taking derivatives and performing optimizatio
 
 # Welcome to CS224N!
 
-We'll be using Python throughout the course. If you've got a good Python setup already, great! But make sure that it is at least Python version 3.5. If not, the easiest thing to do is to make sure you have at least 3GB free on your computer and then to head over to (https://www.anaconda.com/download/) and install the Python 3 version of Anaconda. It will work on any operating system.
+In this part you will implement the word2vec model and train your own word vectors with stochastic gradient descent (SGD). Before you begin, first run the following commands within the assignment directory in order to create the appropriate conda virtual environment. This guarantees that you have all the necessary packages to complete the assignment. Windows users may wish to install the Linux Windows Subsystem9. Also note that you probably want to finish the previous math section before writing the code since you will be asked to implement the math functions in Python. You’ll probably want to implement and test each part of this section in order, since the questions are cumulative.
 
-After you have installed conda, close any open terminals you might have. Then open a new terminal and run the following command:
-
-## 1. Create an environment with dependencies specified in env.yml:
     
-    conda env create -f env.yml
-
-## 2. Activate the new environment:
+    conda env create -f env.yml    
+    conda activate a2
     
-    conda activate cs224n
-    
-## 3. Inside the new environment, install IPython kernel so we can use this environment in jupyter notebook: 
-    
-    python -m ipykernel install --user --name cs224n
-
-
-## 4. Homework 1 (only) is a Jupyter Notebook. With the above done you should be able to get underway by typing:
-
-    jupyter notebook CS224n_Assignment01.ipynb
-    
-### 5. To make sure we are using the right environment, go to the toolbar of exploring_word_vectors.ipynb, click on Kernel -> Change kernel, you should see and select cs224n in the drop-down menu.
-
-## To deactivate an active environment, use
+## Once you are done with the assignment you can deactivate this environment by running:
     
     conda deactivate
+
+For each of the methods you need to implement, we included approximately how many lines of code our solution has in the code comments. These numbers are included to guide you. You don’t have to stick to
+them, you can write shorter or longer code as you wish. If you think your implementation is significantly longer than ours, it is a signal that there are some _numpy_ methods you could utilize to make your code both shorter and faster. _for_ loops in Python take a long time to complete when used over large arrays, so we expect you to utilize numpy methods. We will be checking the efficiency of your code. You will be able to see the results of the autograder when you submit your code to _Gradescope_, we recommend submitting early and often.
+**Note:** If you are using Windows and have trouble running the .sh scripts used in this part, we recommend trying Gow or manually running commands in the scripts.
